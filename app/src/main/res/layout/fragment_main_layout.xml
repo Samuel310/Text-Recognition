@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainLayout">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/appbar_background"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/iv_image_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbar_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/button_holder_layout"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/button_holder_layout"
+            android:layout_margin="10dp"
+            android:text="@string/no_image_selected"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:id="@+id/button_holder_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_take_snap"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/circle_btn_background"
+                android:drawableTop="@drawable/ic_photo_camera"
+                android:paddingTop="17dp"/>
+
+            <Button
+                android:id="@+id/btn_select_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_btn_background"
+                android:drawableTop="@drawable/ic_select_image"
+                android:paddingTop="17dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

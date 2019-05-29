@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Text Recognition</string>
+    <string name="dialog_msg_to_load_image">Storage permission must be granted in order to load image files from the storage device</string>
+    <string name="dialog_msg_to_save_text_file">Storage permission must be granted in order to save the text file in the storage device</string>
+    <string name="enter_file_name_to_save">Enter file name to save</string>
+    <string name="save">save</string>
+    <string name="no_image_selected">No Image Selected</string>
+    <string name="edit_content">Edit Content</string>
+    <string name="result_will_be_displayed_here">Result will be displayed here</string>
+</resources>

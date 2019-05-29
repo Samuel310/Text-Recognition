@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ResultLayout">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/appbar_background"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="23dp"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/btn_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:padding="3dp"
+                    android:background="@drawable/icon_background"/>
+
+                <ImageView
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_save"
+                    android:layout_toLeftOf="@+id/btn_delete"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:padding="3dp"
+                    android:background="@drawable/icon_background"/>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/appbar_layout">
+
+            <EditText
+                android:id="@+id/edt_result_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:gravity="top"
+                android:background="@android:color/transparent"
+                android:padding="15dp"/>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/result_will_be_displayed_here"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
